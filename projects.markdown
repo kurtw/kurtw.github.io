@@ -5,17 +5,25 @@ permalink: /projects/
 ---
 
 # PortalGame
-This project originally started as a test for a job interview, but I decided to continue to work on it in my free time. The project is a Game Feature plugin for the [Lyra Sample Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine) that adds multiplayer portal mechanics. Ther are more in depth details about the project in the [repository](https://github.com/kurtw/PortalGame). When I started this project I had never used Lyra before, so it has been quite a learning journey. It's not perfect, but every work session I get in makes it a little bit better.
+This project originally started as a test for a job interview. After submitting the project, I decided to continue 
+to work on it in my free time. The project is a Game Feature plugin for the [Lyra Sample Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine) that adds
+multiplayer portal mechanics. There are more in depth details about the project in the [repository](https://github.com/kurtw/PortalGame). 
+When I started this project I had never used Lyra before, so it has been quite a learning journey. 
+It's not perfect, but every work session I get in makes it a little bit better.
+<video style="display:block; margin: auto;" width="600" controls autoplay loop>
+    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/Teleport.mov" type="video/mp4">
+</video><br>
 
-![Teleport Video](assets/images/Teleport.mov){: style="display:block; margin-left: auto; margin-right: auto; width: 600px;"}
-
-As stated above, the main feature of this plugin is the portal mechanic. While doing research I came across many great first-person examples out in the wild, so I thought it would be fun to try to do something from the third-person perspective.
+As stated above, the main feature of this plugin is the portal mechanic. While doing research I came across many 
+great first-person examples out in the wild, so I thought it would be fun to try to do something from the third-person 
+perspective.
 
 Some pain points for me have been:
 
 <u>The learning curve Lyra</u>
 
-There is so much going on under the hood for Lyra that sometimes it's hard to know what to even look for when creating something new or just troubleshooting in general. Thankfully there are a number of good resources out there.
+There is so much going on under the hood for Lyra that sometimes it's hard to know what to even look for when creating 
+something new or just troubleshooting in general. Thankfully there are a number of good resources out there.
 
 Aside from source code, some notable resources I found are:\
 [./X157](https://x157.github.io)\
@@ -26,13 +34,20 @@ Aside from source code, some notable resources I found are:\
 
 <u>Getting the view from each portal to look good from the third-person perspective</u>
 
-This is still a work in progress, as noted in the repo README, because I do not like how the rendered view looks with the most current implementation.
+This is still a work in progress, as noted in the repo README, because I do not like how the rendered view looks with 
+the most current implementation.
 
 It's too magnified and offset.
-![Portal view, current](assets/images/PortalView_current.mov){: style="display:block; margin-left: auto; margin-right: auto; width: 500px;"}
 
-One of the options I explored, code snippet provided below, looks great until rotating the camera or moving "far enough" away from a portal. 
-![Portal view, other](assets/images/PortalView_other.mov){: style="display:block; margin-left: auto; margin-right: auto; width: 500px;"}
+<video style="display:block; margin: 0 auto;" width="600" controls>
+    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/PortalView_current.mov" type="video/mp4">
+</video><br>
+
+One of the options I explored, code snippet provided below, looks great until rotating the camera or moving "far enough"
+away from a portal. 
+<video style="display:block; margin: 0 auto;" width="600" controls>
+    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/PortalView_other.mov" type="video/mp4">
+</video><br>
 
 {% highlight cpp %}
 void APortal::UpdatePortalRenderRotation()
@@ -74,10 +89,14 @@ void APortal::UpdatePortalClipPlane(APortal* Current, APortal* Connected)
 	Connected->PortalCaptureComponent->ClipPlaneBase = Connected->GetActorLocation() + (Current->PortalCaptureComponent->ClipPlaneNormal * -ClipModifier);
 }
 {% endhighlight %}<br>
-
-My current best guess is that either NewDirection, UpdatePortalClipPlane, or both need to account for the player location in a way that keep the portal view from clipping through the floor as seen in the video above.
+My current best guess is that either NewDirection, UpdatePortalClipPlane, or both need to account for the player 
+location in a way that keep the portal view from clipping through the floor as seen in the video above.
 
 <u>Niagara effect flickering</u>
 
-At least on macOS, the Niagara effects do not play well once the portals are spawned. The effects have intense flickering. My current solution is to disable rendering for the Niagara system attched to the B_WeaponSpawner and BP_ExperienceList3D.
-![NiagaraFlicker Video](assets/images/NiagaraFlicker.mov){: style="display:block; margin-left: auto; margin-right: auto; width: 500px;"}
+At least on macOS, the Niagara effects do not play well once the portals are spawned. The effects have intense 
+flickering. My current solution is to disable rendering for the Niagara system attched to the B_WeaponSpawner 
+and BP_ExperienceList3D.
+<video style="display:block; margin: 0 auto;" width="600" controls>
+    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/NiagaraFlicker.mov" type="video/mp4">
+</video>
