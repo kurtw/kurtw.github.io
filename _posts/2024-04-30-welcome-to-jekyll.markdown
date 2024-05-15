@@ -9,11 +9,8 @@ First post
 Code snippet test:
 
 {% highlight cpp %}
-if (OwningController)
+if (var != nullprt)
 {
-	if (CurrentPortal && ConnectedPortal)
-	{
-		UpdatePortal(this, GetConnectedPortal());
-	}
+	// do stuff
 }
 {% endhighlight %}
