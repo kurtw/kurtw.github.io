@@ -15,13 +15,13 @@ feature_row:
     url: "/portfolio/portal-game/"
     btn_class: "btn--primary"
     btn_label: "Go" 
-  - image_path: ""
-    alt: "test-project"
-    title: "Test project"
-    excerpt: "This is a placeholder"
-    url: ""
-    btn_class: "btn--primary"
-    btn_label: "Go"  
+#  - image_path: ""
+#    alt: "test-project"
+#    title: "Test project"
+#    excerpt: "This is a placeholder"
+#    url: ""
+#    btn_class: "btn--primary"
+#    btn_label: "Go"  
 ---
 
 {% include feature_row %}

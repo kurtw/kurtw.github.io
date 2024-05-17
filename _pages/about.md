@@ -1,29 +1,16 @@
 ---
+layout: single
 permalink: /pages/about/
 title: "About"
 excerpt: ". . ."
-toc: true
+author_profile: false
+toc: false
 ---
-
-About me, CV, ...
-
-## About me
-
 ## CV
-### Work Experience
-Woven by Toyota
 
-Toyota Research Institute
-
-Northeastern University
-
-Orbital ATK
-
-US Army
-
-### Education
-Northeastern University
-
-Colorado State University
-
-### Skills
+<iframe
+    src="/assets/docs/KWaage_Resume.pdf"
+    title="Kurt Waage Resume"
+    height="800"
+    width="560">
+</iframe>
