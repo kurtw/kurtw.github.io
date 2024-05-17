@@ -30,11 +30,13 @@ github_username: kurtw
 linkedin_username: Kurt Waage
 
 # Build settings
-theme: minima
-minima:
-   date_format: "%Y-%m-%d"
+#theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.26.1"
    
 markdown: kramdown
+
+plugins:
+   - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
