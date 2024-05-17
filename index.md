@@ -12,7 +12,7 @@ feature_row:
     alt: "portal-plugin"
     title: "Portal Plugin"
     excerpt: "Multiplayer portal plugin for Lyra Starter Game"
-#    url: "/portfolio/portal-game/"
+    url: "/portfolio/portal-game/"
     btn_class: "btn--primary"
     btn_label: "Go"
 ---

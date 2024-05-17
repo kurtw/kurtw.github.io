@@ -1,39 +1,134 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# `jekyll serve`. If you change this file, please restart the server process.
 
-author: Kurt Waage
-title: Kurt's github.io
-email: kurt.waage@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-   This site gives an overview of my experience and projects.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kurtw.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: 
-github_username: kurtw
-linkedin_username: Kurt Waage
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# Build settings
-#theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.26.1"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Kurt's github.io"
+title_separator          : "|"
+name                     : &name "Kurt Waage" # &name is a YAML anchor which can be *referenced later
+description              : "This site gives an overview of my experience and projects."
+url                      : "https://kurtw.github.io"
+words_per_minute         : 200
+search                   : true # true, false (default)
+
+# Site Author
+author:
+   name             : "Kurt Waage"
+   avatar           : "assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+   bio              : ". . ."
+   location         : "Japan"
+   email            :
+   links:
+      - label: "Email"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "mailto:kurt.waage@gmail.com"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/kurtw"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/kurt-j-waage/"
    
+# Site Footer
+footer:
+   links:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/kurtw"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/kurt-j-waage/"
+   
+# Reading Files
+include:
+   - _pages
+exclude:
+   - "*.sublime-project"
+   - "*.sublime-workspace"
+   - vendor
+   - .asset-cache
+   - .bundle
+   - .jekyll-assets-cache
+   - .sass-cache
+   - assets/js/plugins
+   - assets/js/_main.js
+   - assets/js/vendor
+   - Capfile
+   - CHANGELOG
+   - config
+   - Gemfile
+   - Gruntfile.js
+   - gulpfile.js
+   - LICENSE
+   - log
+   - node_modules
+   - package.json
+   - package-lock.json
+   - Rakefile
+   - README
+   - tmp
+
+
+# Conversion
 markdown: kramdown
+
+# Markdown Processing
+kramdown:
+   input: GFM
+   hard_wrap: false
+   auto_ids: true
+   footnote_nr: 1
+   entity_output: as_char
+   toc_levels: 1..6
+   smart_quotes: lsquo,rsquo,ldquo,rdquo
+   enable_coderay: false
+   
+# Collections
+collections:
+   portfolio:
+      output: true
+      permalink: /:collection/:path/
+
+# Defaults
+defaults:
+   # _posts
+   - scope:
+        path: ""
+        type: posts
+     values:
+        layout: single
+        author_profile: true
+        read_time: true
+        comments: true
+        share: true
+        related: true
+   # _pages
+   - scope:
+        path: "_pages"
+        type: pages
+     values:
+        layout: single
+        author_profile: true
+   # _portfolio
+   - scope:
+        path: ""
+        type: portfolio
+     values:
+        layout: single
+        author_profile: false
+        share: true
 
 plugins:
    - jekyll-include-cache
