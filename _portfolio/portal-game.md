@@ -6,7 +6,7 @@ sidebar:
     text: "Replication, gameplay ability system (GAS), game feature plugin, third-person"
 ---
 
-This project originally started as a test for a job interview. After submitting the project, I decided to continue
+This project originally started as a test for a job interview that I decided to continue
 to work on it in my free time. The project is a Game Feature plugin for the [Lyra Sample Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine) that adds
 multiplayer portal mechanics. There are more in depth details about the project in the [repository](https://github.com/kurtw/PortalGame).
 When I started this project I had never used Lyra before, so it has been quite a learning journey.

@@ -26,8 +26,8 @@ search                   : true # true, false (default)
 # Site Author
 author:
    name             : "Kurt Waage"
-   avatar           : "assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-   bio              : ". . ."
+   avatar           : "assets/images/bio-photo.png"
+   bio              : "My background is rooted in research and development, but my passion is games."
    location         : "Japan"
    email            :
    links:
