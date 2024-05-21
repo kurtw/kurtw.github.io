@@ -1,9 +1,12 @@
 ---
 title: "Portal Plugin"
 excerpt: "Multiplayer portal plugin for Lyra Starter Game"
+header:
+  teaser: /assets/images/PortalsActive.png
 sidebar:
   - title: "Features"
     text: "Replication, gameplay ability system (GAS), game feature plugin, third-person"
+share: false
 ---
 
 This project originally started as a test for a job interview that I decided to continue
