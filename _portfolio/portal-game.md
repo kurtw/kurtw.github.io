@@ -15,7 +15,7 @@ multiplayer portal mechanics. There are more in depth details about the project 
 When I started this project I had never used Lyra before, so it has been quite a learning journey.
 It's not perfect, but every work session I get in makes it a little bit better.
 <video style="display:block; margin: auto;" width="600" controls autoplay loop>
-    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/Teleport.mov" type="video/mp4">
+    <source src="/assets/images/PortalMomentum.mp4" type="video/mp4">
 </video><br>
 
 As stated above, the main feature of this plugin is the portal mechanic. While doing research I came across many
