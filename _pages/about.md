@@ -11,25 +11,37 @@ I got my start working in the tech industry with autonomous vehicles, this is wh
 I love learning new things, and am always happy to volunteer to jump into unfamiliar territory. 
 For me, it's the journey that counts, and I try to enjoy every last second of it.
 
+## Games
+### The Texas Chainsaw Massacre
+[![TCM image](/assets/images/TCM_image.png){: width="250px" style="display: block; float: left margin: 0 auto" }](https://www.txchainsawgame.com)
+
 ## Skills and Tools
 ### Primary
 - C++
-- Unreal Engine 5
-- Physics
-- 3D math
-- Gameplay mechanics
+- Unreal Engine (4.27, 5+)
+    - Blueprints
+    - Gameplay Ability System (GAS)
+    - Multiplayer / Replication
+    - Gauntlet
+- Physics & 3D Math
+- Optimization
+- Debugging
 - Git
+- Perforce
+- Rider
 
 ### Secondary
-- C#
-- Unity
+- C# 
+- Consoles (Xbox & Playstation)
+- Unreal Motion Graphics (UMG)
 - Extended reality
 - System integration
-- Plastic SCM
+- Visual Studio
+- Jira
 
 ## CV
 <iframe
-    src="/assets/docs/KWaage_Resume.pdf"
+    src="/assets/docs/Kurt_Waage_Resume.pdf"
     title="Kurt Waage Resume"
     height="800"
     width="560">

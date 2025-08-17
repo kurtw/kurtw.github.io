@@ -1,8 +1,8 @@
 ---
-title: Personal Projects
+title: Games
 layout: collection
-permalink: /pages/portfolio/
-collection: portfolio
+permalink: /pages/games/
+collection: games
 entries_layout: grid
 classes: wide
 author_profile: true

@@ -8,11 +8,20 @@ header:
 excerpt: >
   This site gives an overview of my experience and projects.<br />
 feature_row:
+  # portfolio
   - image_path: assets/images/PortalsActive.png
-    alt: "portal-plugin"
-    title: "Portal Plugin"
-    excerpt: "Multiplayer portal plugin for Lyra Starter Game"
-    url: "/portfolio/portal-game/"
+    alt: "portfolio"
+    title: "Personal Projects"
+    excerpt: "Projects I have worked on in my free time"
+    url: "/pages/portfolio/"
+    btn_class: "btn--primary"
+    btn_label: "Go"
+  # games
+  - image_path: assets/images/TCM_image.png
+    alt: "games"
+    title: "Games"
+    excerpt: "Shipped games I have worked on"
+    url: "/pages/games/"
     btn_class: "btn--primary"
     btn_label: "Go"
 ---
