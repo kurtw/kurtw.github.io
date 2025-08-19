@@ -11,9 +11,8 @@ I got my start working in the tech industry with autonomous vehicles, this is wh
 I love learning new things, and am always happy to volunteer to jump into unfamiliar territory. 
 For me, it's the journey that counts, and I try to enjoy every last second of it.
 
-## Games
-### The Texas Chainsaw Massacre
-[![TCM image](/assets/images/TCM_image.png){: width="250px" style="display: block; float: left margin: 0 auto" }](https://www.txchainsawgame.com)
+## [Professional Games](/pages/games/)
+[![TCM image](/assets/images/TCM_image.png){: width="100px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
 
 ## Skills and Tools
 ### Primary

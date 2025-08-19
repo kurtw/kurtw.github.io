@@ -39,15 +39,20 @@ Aside from source code, some notable resources I found are:\
 
 In the current state, it's too magnified and offset.
 
-<video style="display:block; margin: 0 auto;" width="600" controls>
-    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/PortalView_current.mov" type="video/mp4">
+<video style="display:block; margin: auto;" width="600" controls>
+    <!-- <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/PortalView_current.mov" type="video/mp4">
+</video><br> -->
+    <source src="/assets/images/PortalView_current.mp4" type="video/mp4">
 </video><br>
+
 
 <u>Niagara effect flickering</u>
 
 At least on macOS, the Niagara effects do not play well once the portals are spawned. The effects have intense
 flickering. My current solution is to disable rendering for the Niagara system attched to the B_WeaponSpawner
 and BP_ExperienceList3D.
-<video style="display:block; margin: 0 auto;" width="600" controls>
-    <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/NiagaraFlicker.mov" type="video/mp4">
-</video>
+<video style="display:block; margin: auto;" width="600" controls>
+    <!-- <source src="https://github.com/kurtw/kurtw.github.io/raw/main/assets/images/NiagaraFlicker.mov" type="video/mp4">
+</video><br> -->
+    <source src="/assets/images/NiagaraFlicker.mp4" type="video/mp4">
+</video><br>
