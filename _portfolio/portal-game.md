@@ -9,24 +9,23 @@ sidebar:
 share: false
 ---
 
-This project originally started as a test for a job interview. The project is a Game Feature plugin for the [Lyra Sample Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine) that adds
+This project was part of a test for a job interview. The project is a Game Feature plugin for the [Lyra Sample Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/lyra-sample-game-in-unreal-engine) that adds
 multiplayer portal mechanics. There are more in depth details about the project in the [repository](https://github.com/kurtw/PortalGame).
-When I started this project I had never used Lyra before, so it has been quite a learning journey.
-It's not perfect, but each time I am able to work on it, it becomes little bit better.
+When I started this project I had never used Lyra before, so it was quite a learning journey.
+It's not perfect, but it was a great way to get familiar with Lyra and Epic's best practices.
 <video style="display:block; margin: auto;" width="600" controls autoplay loop>
     <source src="/assets/images/PortalMomentum.mp4" type="video/mp4">
 </video><br>
 
 The main feature of this plugin is the portal mechanic. While doing research I came across many
-great first-person examples out in the wild, so I thought it would be fun to try to do something from the third-person
+great first-person examples, but I thought it would be fun to try to do something from the third-person
 perspective.
 
-Some pain points for me have been:
+Some pain points for me while working on the plugin:
 
 <u>The learning curve Lyra</u>
 
-There is so much going on under the hood for Lyra that sometimes it's hard to know what to even look for when creating
-something new or just troubleshooting in general. Thankfully there are a number of good resources out there.
+There is so much going on under the hood for Lyra (and Unreal Engine in general) that sometimes it's hard to know what to even look for when creating anything new or just troubleshooting in general. Thankfully there are a number of good resources out there.
 
 Aside from source code, some notable resources I found are:\
 [./X157](https://x157.github.io)\
@@ -44,7 +43,6 @@ In the current state, it's too magnified and offset.
 </video><br> -->
     <source src="/assets/images/PortalView_current.mp4" type="video/mp4">
 </video><br>
-
 
 <u>Niagara effect flickering</u>
 

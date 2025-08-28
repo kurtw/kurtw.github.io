@@ -14,6 +14,8 @@ For me, it's the journey that counts, and I try to enjoy every last second of it
 ## [Professional Games](/pages/games/)
 [![TCM image](/assets/images/TCM_image.png){: width="100px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
 
+## [Games-adjacent Work](/pages/games_adjacent)
+
 ## Skills and Tools
 ### Primary
 - C++
@@ -25,13 +27,12 @@ For me, it's the journey that counts, and I try to enjoy every last second of it
 - Physics & 3D Math
 - Optimization
 - Debugging
-- Git
-- Perforce
+- Perforce, Git
 - Rider
 
 ### Secondary
 - C# 
-- Consoles (Xbox & Playstation)
+- Consoles (Xbox & PlayStation)
 - Unreal Motion Graphics (UMG)
 - Extended reality
 - System integration
