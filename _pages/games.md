@@ -19,3 +19,16 @@ toc: true
 - Rider and Visual Studio
 - Consoles (Xbox and PlayStation)
 - Jira
+
+## Fortnite
+[![FN image](/assets/images/BtBites.png){: width="250px" style="display: block; float: left margin: auto" }](https://www.blacktower.jp/blacktowerbites/)
+### Related Skills and Tools
+- Unreal Editor for Fortnite
+- Verse
+- Multiplayer
+- Optimization
+- Debugging
+- Unreal Revision Control
+- Perforce
+- VS Code
+- Jira

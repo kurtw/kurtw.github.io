@@ -12,7 +12,9 @@ I love learning new things, and am always happy to volunteer to jump into unfami
 For me, it's the journey that counts, and I try to enjoy every last second of it.
 
 ## [Professional Games](/pages/games/)
-[![TCM image](/assets/images/TCM_image.png){: width="100px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
+[![TCM image](/assets/images/TCM_image.png){: width="150px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
+
+[![FN image](/assets/images/BtBites.png){: width="150px" style="display: block; float: left margin: auto" }](https://www.blacktower.jp/blacktowerbites/)
 
 ## [Games-adjacent Work](/pages/games_adjacent)
 
@@ -32,6 +34,7 @@ For me, it's the journey that counts, and I try to enjoy every last second of it
 
 ### Secondary
 - C# 
+- Unreal Editor For Fortnite & Verse
 - Consoles (Xbox & PlayStation)
 - Unreal Motion Graphics (UMG)
 - Extended reality
