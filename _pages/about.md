@@ -39,7 +39,7 @@ For me, it's the journey that counts, and I try to enjoy every last second of it
 - Unreal Motion Graphics (UMG)
 - Extended reality
 - System integration
-- Visual Studio
+- Visual Studio, VS Code
 - Jira
 
 ## CV

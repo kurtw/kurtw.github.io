@@ -28,7 +28,6 @@ toc: true
 - Multiplayer
 - Optimization
 - Debugging
-- Unreal Revision Control
-- Perforce
+- Perforce, Unreal Revision Control
 - VS Code
 - Jira
