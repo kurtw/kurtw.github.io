@@ -23,7 +23,7 @@ perspective.
 
 Some pain points for me while working on the plugin:
 
-<u>The learning curve Lyra</u>
+<u>The Lyra learning curve</u>
 
 There is so much going on under the hood for Lyra (and Unreal Engine in general) that sometimes it's hard to know what to even look for when creating anything new or just troubleshooting in general. Thankfully there are a number of good resources out there.
 
