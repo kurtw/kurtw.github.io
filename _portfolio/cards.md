@@ -14,7 +14,7 @@ At some point I ended up watching some videos by [LeafBranchGames](https://www.y
 I'm sure there are many better ways to go about this, but I decided to do everything with UI only to get some more practice with UMG and UI in general. The [repository can be found here.](https://github.com/kurtw/TCG_Testing)
 
 <video style="display:block; margin: auto;" width="600" controls autoplay loop>
-    <source src="/assets/images/card_vid.mp4" type="video/mp4">
+    <source src="/assets/images/cards_overview.mp4" type="video/mp4">
 </video><br>
 
 <u>Overview</u>
@@ -33,7 +33,7 @@ The round state and timers are used to give some basic game flow, where during `
 
 Once the round ends, the game state becomes `CARDS REVEALED!`, which initiates the end of round flow. During end of round flow all cards in the play zone are revealed. `CARDS REVEALED!` state has a timer that also counts down to indicate how long until the next round starts. When a new round starts, cards are removed from the player's hands and also from the play zone. At this point the process described above can be repeated to go through a new round.
 
-![EndRound image](/assets/images/endround.png){: width="600px" style="display: block; float: left margin: auto" }
+![EndRound image](/assets/images/endround2.png){: width="600px" style="display: block; float: left margin: auto" }
 
 The debug section can be used to tweak the transform of the player's cards. Opponent cards are fixed and cannot be changed dynamically. The add card button was helpful early on, so I just kept it.
 
