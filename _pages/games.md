@@ -6,7 +6,7 @@ author_profile: true
 show_date: false
 toc: true
 ---
-# Currently working on an unannouced multiplayer game.
+# Currently working on an unannouced multiplayer game
 Designing and building core gameplay systems.
 
 ## Related Skills and Tools

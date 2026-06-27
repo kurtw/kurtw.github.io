@@ -12,6 +12,8 @@ I love learning new things, and am always happy to volunteer to jump into unfami
 For me, it's the journey that counts, and I try to enjoy every last second of it.
 
 ## [Professional Games](/pages/games/)
+[Currently working on an unannouced multiplayer game](/pages/games/#currently-working-on-an-unannouced-multiplayer-game)
+
 [![TCM image](/assets/images/TCM_image.png){: width="150px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
 
 [![FN image](/assets/images/BtBites.png){: width="150px" style="display: block; float: left margin: auto" }](https://www.blacktower.jp/blacktowerbites/)
@@ -22,21 +24,24 @@ For me, it's the journey that counts, and I try to enjoy every last second of it
 ### Primary
 - C++
 - Unreal Engine (4.27, 5+)
-    - Blueprints
+    - Blueprints, Animation blueprints
+    - Chaos Physics
     - Gameplay Ability System (GAS)
     - Multiplayer / Replication
-    - Gauntlet
 - Physics & 3D Math
 - Optimization
 - Debugging
-- Perforce, Git
+- Perforce, Git, SVN
 - Rider
 
 ### Secondary
-- C# 
-- Unreal Editor For Fortnite & Verse
+- C#
+- Unreal Engine
+    - Unreal Editor For Fortnite & Verse
+    - Unreal Motion Graphics (UMG) & Common UI
+    - Gauntlet
+    - PCG, Voxel
 - Consoles (Xbox & PlayStation)
-- Unreal Motion Graphics (UMG)
 - Extended reality
 - System integration
 - Visual Studio, VS Code
