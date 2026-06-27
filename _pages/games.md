@@ -6,6 +6,17 @@ author_profile: true
 show_date: false
 toc: true
 ---
+# Currently working on an unannouced multiplayer game.
+Designing and building core gameplay systems.
+
+## Related Skills and Tools
+- Unreal Engine
+    - Blueprints, Animation blueprints, Common UI, MVVM, Chaos Physics
+- Multiplayer
+- Optimization
+- Debugging
+- SVN
+
 # The Texas Chainsaw Massacre
 [![TCM image](/assets/images/TCM_image.png){: width="400px" style="display: flex; justify-content: center; margin: auto" }](https://www.txchainsawgame.com)
 ## Related Skills and Tools
