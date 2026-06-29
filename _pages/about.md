@@ -12,7 +12,7 @@ I love learning new things, and am always happy to volunteer to jump into unfami
 For me, it's the journey that counts, and I try to enjoy every last second of it.
 
 ## [Professional Games](/pages/games/)
-[Currently working on an unannouced multiplayer game](/pages/games/#currently-working-on-an-unannouced-multiplayer-game)
+[Currently working on an unannouced multiplayer multi-industry sim game](/pages/games/#currently-working-on-an-unannouced-multiplayer-multi-industry-sim-game)
 
 [![TCM image](/assets/images/TCM_image.png){: width="150px" style="display: block; float: left margin: auto" }](https://www.txchainsawgame.com)
 

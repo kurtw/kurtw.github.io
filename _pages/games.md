@@ -6,12 +6,12 @@ author_profile: true
 show_date: false
 toc: true
 ---
-# Currently working on an unannouced multiplayer game
+# Currently working on an unannouced multiplayer multi-industry sim game
 Designing and building core gameplay systems.
 
 ## Related Skills and Tools
 - Unreal Engine
-    - Blueprints, Animation blueprints, Common UI, MVVM, Chaos Physics
+    - Blueprints, Animation blueprints, Common UI, MVVM, Chaos Physics, Replication
 - Multiplayer
 - Optimization
 - Debugging
