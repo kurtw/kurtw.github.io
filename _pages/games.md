@@ -6,16 +6,42 @@ author_profile: true
 show_date: false
 toc: true
 ---
-# Currently working on an unannouced multiplayer multi-industry sim game
-Designing and building core gameplay systems.
+# Stage Games: Unannounced UE5 Projects
+
+Building core gameplay systems from prototype toward production in Unreal Engine 5 with C++ and Blueprint.
+
+## Highlights
+
+- Architected a networked interaction framework where clients scan and rank targets locally while the server re-validates each request before committing.
+- Developed a data-driven building and placement system on voxel terrain, with a shared inventory moving resources between structures and vehicles.
+- Integrated the Gameplay Ability System with configurable ability sets, and a gateway ability that routes interaction requests carrying custom target-data payloads.
+- Modeled player status as a replicated GAS Attribute Set for hunger, stamina, and sickness, with data-table-driven states applied as gameplay effects.
+- Designed an action-modifier system that resolves player and world state into one deterministic multiplier per outcome, applied at commit and designer-tunable without code.
+- Designed one tool-and-knowledge gate serving both scavenging and staged dismantling, so the second mechanic reused the first system's gating and yield resolution instead of duplicating it.
+- Built gameplay UI on Common UI and MVVM so C++ handles behavior and data flow while designers keep full control of layout and presentation.
+- Migrated a phone and menu UI system onto Common UI with full gamepad, keyboard, and mouse navigation, leaving it in a state design and art could build on.
+- Programmed gameplay-driven animation for Chaos Vehicles with Control Rig and Animation Blueprints, including FK crane articulation and hook and cable orientation solved at runtime.
+- Stood up a dedicated automation test module, writing scoring, slot rules, and modifier math as world-free unit-tested logic alongside in-world functional tests.
+- Authored the team's UI authoring, Gameplay Tag, content organization, and verification standards.
 
 ## Related Skills and Tools
+
+- C++
 - Unreal Engine
-    - Blueprints, Animation blueprints, Common UI, MVVM, Chaos Physics, Replication
+  * Blueprints, Gameplay Ability System (GAS), Common UI, MVVM, Enhanced Input, Replication, Chaos Physics, Control Rig, Animation Blueprints, Automation and Functional Testing
 - Multiplayer
-- Optimization
 - Debugging
 - SVN
+
+## Examples of Work
+
+### Interaction Targeting, Revisited
+
+The priority-based selection I added on The Texas Chainsaw Massacre (below) solved the "used a toilet instead of a door" problem. On this project I built interaction from scratch and took the idea further, into a full scoring model.
+
+Each candidate is scored from a base priority, a distance curve, an angle curve, a per-provider bias, a reticle bonus, and hysteresis that favors the current target so the prompt doesn't flicker between two close options. Line-of-sight and camera-cone checks filter candidates first, with a short grace period so a target doesn't drop the moment something briefly blocks it.
+
+The client does all of this locally so prompts feel instant. When the player commits, the server re-resolves the target and re-validates the request before anything changes in the world. The scoring function doesn't depend on the world, so it's covered by unit tests rather than only by playtesting.
 
 # The Texas Chainsaw Massacre
 [![TCM image](/assets/images/TCM_image.png){: width="400px" style="display: flex; justify-content: center; margin: auto" }](https://www.txchainsawgame.com)
