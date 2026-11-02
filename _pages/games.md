@@ -12,17 +12,25 @@ Building core gameplay systems from prototype toward production in Unreal Engine
 
 ## Highlights
 
-- Architected a networked interaction framework where clients scan and rank targets locally while the server re-validates each request before committing.
+### Gameplay systems
+
+- Architected a networked interaction framework where clients scan and rank targets locally while the server re-validates each request.
 - Developed a data-driven building and placement system on voxel terrain, with a shared inventory moving resources between structures and vehicles.
-- Integrated the Gameplay Ability System to drive payer interaction and status, with configurable ability sets, and a gateway ability that routes interaction requests carrying custom target-data payloads.
+- Integrated the Gameplay Ability System to drive player interaction and status, with configurable ability sets and a gateway ability that routes requests carrying custom target-data payloads.
 - Designed an action-modifier system that resolves player and world state into one deterministic multiplier per outcome, applied at commit and designer-tunable without code.
-- Designed one tool-and-knowledge gate serving both scavenging and staged dismantling, so the second mechanic reused the first system's gating and yield resolution instead of duplicating it.
+- Designed a single requirement-and-yield gate shared by two gathering mechanics, so the second reused the first’s gating and yield resolution instead of duplicating it.
 - Prototyped and tuned gameplay mechanics and level layouts directly in engine, making design decisions alongside the programming.
+
+### UI and animation
+
 - Built gameplay UI on Common UI and MVVM so C++ handles behavior and data flow while designers keep full control of layout and presentation.
-- Migrated a phone and menu UI system from an inherited project onto Common UI with full gamepad, keyboard, and mouse navigation, leaving it in a state design and art could build on.
+- Migrated a phone and menu UI system from a legacy Slate widget onto Common UI with full gamepad, keyboard, and mouse navigation, leaving it in a state design and art could build on.
 - Programmed gameplay-driven animation for Chaos Vehicles with Control Rig and Animation Blueprints, including FK crane articulation and hook and cable orientation solved at runtime.
+
+### Tooling and testing
+
 - Stood up a dedicated automation test module, writing scoring, slot rules, and modifier math as world-free unit-tested logic alongside in-world functional tests.
-- Authored the team's UI authoring, Gameplay Tag, content organization, and verification standards.
+- Authored the team’s standards for UI, Gameplay Tags, content organization, and verification.
 
 ## Related Skills and Tools
 
