@@ -14,12 +14,12 @@ Building core gameplay systems from prototype toward production in Unreal Engine
 
 - Architected a networked interaction framework where clients scan and rank targets locally while the server re-validates each request before committing.
 - Developed a data-driven building and placement system on voxel terrain, with a shared inventory moving resources between structures and vehicles.
-- Integrated the Gameplay Ability System with configurable ability sets, and a gateway ability that routes interaction requests carrying custom target-data payloads.
-- Modeled player status as a replicated GAS Attribute Set for hunger, stamina, and sickness, with data-table-driven states applied as gameplay effects.
+- Integrated the Gameplay Ability System to drive payer interaction and status, with configurable ability sets, and a gateway ability that routes interaction requests carrying custom target-data payloads.
 - Designed an action-modifier system that resolves player and world state into one deterministic multiplier per outcome, applied at commit and designer-tunable without code.
 - Designed one tool-and-knowledge gate serving both scavenging and staged dismantling, so the second mechanic reused the first system's gating and yield resolution instead of duplicating it.
+- Prototyped and tuned gameplay mechanics and level layouts directly in engine, making design decisions alongside the programming.
 - Built gameplay UI on Common UI and MVVM so C++ handles behavior and data flow while designers keep full control of layout and presentation.
-- Migrated a phone and menu UI system onto Common UI with full gamepad, keyboard, and mouse navigation, leaving it in a state design and art could build on.
+- Migrated a phone and menu UI system from an inherited project onto Common UI with full gamepad, keyboard, and mouse navigation, leaving it in a state design and art could build on.
 - Programmed gameplay-driven animation for Chaos Vehicles with Control Rig and Animation Blueprints, including FK crane articulation and hook and cable orientation solved at runtime.
 - Stood up a dedicated automation test module, writing scoring, slot rules, and modifier math as world-free unit-tested logic alongside in-world functional tests.
 - Authored the team's UI authoring, Gameplay Tag, content organization, and verification standards.
